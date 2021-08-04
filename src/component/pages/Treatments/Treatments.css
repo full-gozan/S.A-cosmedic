@@ -1,0 +1,70 @@
+.treatment-container {
+  margin: 110px 5% 0% 5%;
+  width: 90%;
+  display: flex;
+  flex-flow: column;
+  justify-items: center;
+  background-color: rgb(241, 236, 236);
+}
+
+.treatment-panel {
+  max-width: 1200px;
+  min-width: 300px;
+  margin-bottom: 20px;
+}
+.panel-welcome {
+  width: 300px;
+  height: auto;
+  position: absolute;
+  top: 120px;
+  left: 40px;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(216, 100, 100);
+  font-family: "Times New Roman", Times, serif;
+}
+.treatments {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-flow: column;
+}
+.treatment {
+  display: flex;
+  margin: 0px 10px 40px 10px;
+  flex-flow: row;
+  border-top: solid 2px;
+}
+
+/* style TreatmentItem component */
+.treatment-info {
+  width: 58%;
+  height: auto;
+  padding: 0px 2%;
+}
+.treatment-info p {
+  text-align: start;
+}
+.treatment-price {
+  width: 42%;
+  height: auto;
+}
+.treatment-info h3 {
+  font-size: 30px;
+  color: rgb(31, 194, 216);
+  background-color: green;
+}
+
+@media screen and (max-width: 600px) {
+  .treatment {
+    flex-flow: column;
+  }
+  .treatment-info,
+  .treatment-price {
+    width: 100%;
+    margin: 0px;
+  }
+  .treatment:nth-child(even) {
+    flex-flow: column;
+  }
+}

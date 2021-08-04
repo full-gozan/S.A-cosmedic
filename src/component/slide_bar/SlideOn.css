@@ -1,0 +1,52 @@
+.slidebar {
+  top: 0;
+  left: 0;
+  width: 80%;
+  max-width: 400px;
+  position: fixed;
+  background-color: rgb(108, 110, 110);
+  text-align: center;
+  height: 100%;
+  z-index: 2;
+}
+
+.slidebar a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+
+.slidebar li {
+  list-style: none;
+  margin-top: 40px;
+}
+
+/* style the Menu Toggle Button icon */
+.icon-off {
+  height: 50px;
+  width: 50px;
+  display: block;
+  cursor: pointer;
+}
+.crossIcon {
+  width: 5%;
+  padding-top: 10px;
+  margin-left: 12px;
+  margin-right: 16px;
+  display: block;
+}
+
+.cross {
+  width: 33px;
+  height: 4px;
+  background-color: black;
+  margin: 6px 0px;
+}
+#cross1 {
+  transform: rotate(45deg);
+  transform-origin: 20% 83%;
+}
+#cross2 {
+  transform: rotate(-45deg);
+  transform-origin: 36% 80%;
+}

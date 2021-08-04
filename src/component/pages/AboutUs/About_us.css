@@ -1,0 +1,102 @@
+.about-me-frame {
+  padding: 90px 10px 100px 10px;
+}
+.about_me_container {
+  background-color: rgb(227, 238, 238);
+  display: flex;
+  flex-flow: row;
+  padding-bottom: 70px;
+  background-image: url("https://cdn.pixabay.com/photo/2016/05/18/13/41/love-1400557_1280.jpg");
+}
+.opening_time {
+  padding-top: 100px;
+}
+.brand_name {
+  color: rgb(58, 53, 54);
+  background: linear-gradient(
+    90deg,
+    #c0a4a4 0%,
+    #cfc8c8 50%,
+    rgb(194, 176, 143) 100%
+  );
+  width: 40%;
+  font-size: 26px;
+  font-weight: 500;
+  margin-left: 30%;
+}
+.about_me,
+.about_brand {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 1% 2%;
+}
+.about_me {
+  flex-direction: row-reverse;
+}
+
+.about_me_brief {
+  font-family: brandon-grotesque;
+  color: rgba(0, 0, 0, 0.6);
+  width: 90%;
+  padding-left: 4px;
+  text-align: center;
+  color: black;
+  background-color: white;
+  opacity: 0.8;
+  padding-bottom: 200px;
+}
+
+.sa {
+  background-color: #c0a4a4;
+  margin-left: -60px;
+}
+.owner {
+  background-color: rgb(194, 176, 143);
+  margin-right: -60px;
+  margin-left: 10px;
+}
+.about_me_brief p {
+  padding-left: 10px;
+  text-align: start;
+}
+
+@media screen and (max-width: 600px) {
+  .about-me-frame {
+    padding: 20px 10px 50px 10px;
+  }
+  .opening_time {
+    padding-top: 0px;
+  }
+  .about_me_container {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  .brand_name {
+    display: none;
+  }
+  .about_me,
+  .about_brand {
+    flex-flow: column;
+    margin: 0%;
+    width: 100%;
+  }
+
+  .sa,
+  .owner {
+    margin: 0%;
+    font-size: 22px;
+  }
+  .about_me_brief {
+    width: 100%;
+    margin-bottom: 0px 2px 20px 2px;
+    padding-bottom: 40px;
+  }
+  .about_me_brief p {
+    text-align: start;
+  }
+}

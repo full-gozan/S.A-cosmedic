@@ -1,0 +1,29 @@
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-top: solid 2px;
+  padding-top: 40px;
+  background-color: black;
+}
+.footer-container * {
+  color: white;
+}
+li {
+  list-style-type: none;
+  font-size: 20px;
+  font-family: brandon-grotesque;
+}
+li :hover {
+  color: rgb(137, 180, 140);
+}
+@media screen and (max-width: 600px) {
+  .footer-follow {
+    text-align: center;
+  }
+}
+.footer-follow h3,
+.footer-links h3 {
+  font-size: 24px;
+  font-family: brandon-grotesque;
+}

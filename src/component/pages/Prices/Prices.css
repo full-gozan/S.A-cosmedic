@@ -1,0 +1,45 @@
+.price-frame {
+  margin: 0vh 5% 0% 5%;
+  padding-top: 12vh;
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-items: center;
+  background-color: rgb(241, 236, 236);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.price-frame .price-container {
+  width: 50%;
+  margin-bottom: 30px;
+}
+.table-title {
+  color: rgb(32, 82, 40);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: start;
+  margin-left: 10%;
+}
+.price-table {
+  margin-top: 10px;
+  width: 100%;
+  min-width: 250px;
+  font-size: 20px;
+}
+
+.price-container:nth-child(even) {
+  border-left: 1px solid;
+}
+tr:nth-child(even) {
+  background-color: rgba(217, 217, 230, 0.212);
+}
+
+@media screen and (max-width: 600px) {
+  .price-frame {
+    margin-top: 80px;
+    flex-direction: column;
+  }
+  .price-container {
+    width: 100%;
+    border-left: 0px solid;
+  }
+}
